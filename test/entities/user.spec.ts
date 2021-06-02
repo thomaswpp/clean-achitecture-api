@@ -1,4 +1,4 @@
-import { User } from '../../src/entities'
+import { User } from '@/entities'
 
 describe('User domain entity', () => {
   test('should not create user with invalid e-mail address', () => {
@@ -19,6 +19,8 @@ describe('User domain entity', () => {
   //   const invalidName = 'o'.repeat(257)
   //   const error = User.create({ name: invalidName, email: 'any@mail.com' })
   //   expect(error).toEqual(left(new InvalidNameError()))
+  //   expect(error.name.value).toEqual(invalidName)
+  //   expect(error.email.value).toEqual(invalidName)
   // })
 
   test('should create user with valid name', () => {
